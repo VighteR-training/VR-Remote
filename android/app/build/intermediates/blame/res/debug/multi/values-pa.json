@@ -7,17 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 105,
-                    "endColumn": 108,
-                    "endOffset": 209
+                    "endColumn": 256,
+                    "endOffset": 357
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 283,
-                        "endColumn": 104,
-                        "endOffset": 387
+                        "startColumn": 4,
+                        "startOffset": 329,
+                        "endColumn": 256,
+                        "endOffset": 581
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 214,
-                    "endColumn": 206,
-                    "endOffset": 416
+                    "startOffset": 362,
+                    "endColumn": 134,
+                    "endOffset": 492
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 388,
-                        "endColumn": 206,
-                        "endOffset": 594
+                        "startColumn": 4,
+                        "startOffset": 586,
+                        "endColumn": 134,
+                        "endOffset": 716
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 421,
-                    "endColumn": 131,
-                    "endOffset": 548
+                    "startOffset": 497,
+                    "endColumn": 206,
+                    "endOffset": 699
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 6,
-                        "startColumn": 0,
-                        "startOffset": 595,
-                        "endColumn": 127,
-                        "endOffset": 722
+                        "startColumn": 4,
+                        "startOffset": 721,
+                        "endColumn": 206,
+                        "endOffset": 923
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 553,
-                    "endColumn": 110,
-                    "endOffset": 659
+                    "startOffset": 704,
+                    "endColumn": 131,
+                    "endOffset": 831
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 7,
-                        "startColumn": 0,
-                        "startOffset": 723,
-                        "endColumn": 106,
-                        "endOffset": 829
+                        "startColumn": 4,
+                        "startOffset": 928,
+                        "endColumn": 131,
+                        "endOffset": 1055
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 664,
-                    "endColumn": 205,
-                    "endOffset": 865
+                    "startOffset": 836,
+                    "endColumn": 131,
+                    "endOffset": 963
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 8,
-                        "startColumn": 0,
-                        "startOffset": 830,
-                        "endColumn": 205,
-                        "endOffset": 1035
+                        "startColumn": 4,
+                        "startOffset": 1060,
+                        "endColumn": 131,
+                        "endOffset": 1187
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 870,
-                    "endColumn": 130,
-                    "endOffset": 996
+                    "startOffset": 968,
+                    "endColumn": 210,
+                    "endOffset": 1174
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 9,
-                        "startColumn": 0,
-                        "startOffset": 1036,
-                        "endColumn": 126,
-                        "endOffset": 1162
+                        "startColumn": 4,
+                        "startOffset": 1192,
+                        "endColumn": 210,
+                        "endOffset": 1398
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 1001,
-                    "endColumn": 132,
-                    "endOffset": 1129
+                    "startOffset": 1179,
+                    "endColumn": 213,
+                    "endOffset": 1388
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
                         "startLine": 10,
-                        "startColumn": 0,
-                        "startOffset": 1163,
-                        "endColumn": 128,
-                        "endOffset": 1291
+                        "startColumn": 4,
+                        "startOffset": 1403,
+                        "endColumn": 213,
+                        "endOffset": 1612
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 1134,
-                    "endColumn": 209,
-                    "endOffset": 1339
+                    "startOffset": 1393,
+                    "endColumn": 130,
+                    "endOffset": 1519
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 285,
-                        "endColumn": 209,
-                        "endOffset": 494
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1617,
+                        "endColumn": 130,
+                        "endOffset": 1743
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 1344,
-                    "endColumn": 220,
-                    "endOffset": 1560
+                    "startOffset": 1524,
+                    "endColumn": 179,
+                    "endOffset": 1699
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 11,
-                        "startColumn": 0,
-                        "startOffset": 1292,
-                        "endColumn": 220,
-                        "endOffset": 1512
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1748,
+                        "endColumn": 179,
+                        "endOffset": 1923
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1565,
-                    "endColumn": 110,
-                    "endOffset": 1671
+                    "startOffset": 1704,
+                    "endColumn": 122,
+                    "endOffset": 1822
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 12,
-                        "startColumn": 0,
-                        "startOffset": 1513,
-                        "endColumn": 106,
-                        "endOffset": 1619
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1928,
+                        "endColumn": 122,
+                        "endOffset": 2046
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1676,
-                    "endColumn": 199,
-                    "endOffset": 1871
+                    "startOffset": 1827,
+                    "endColumn": 165,
+                    "endOffset": 1988
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 13,
-                        "startColumn": 0,
-                        "startOffset": 1620,
-                        "endColumn": 199,
-                        "endOffset": 1819
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 2051,
+                        "endColumn": 165,
+                        "endOffset": 2212
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1876,
-                    "endColumn": 133,
-                    "endOffset": 2005
+                    "startOffset": 1993,
+                    "endColumn": 121,
+                    "endOffset": 2110
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 14,
-                        "startColumn": 0,
-                        "startOffset": 1820,
-                        "endColumn": 129,
-                        "endOffset": 1949
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2217,
+                        "endColumn": 121,
+                        "endOffset": 2334
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 2010,
-                    "endColumn": 210,
-                    "endOffset": 2216
+                    "startOffset": 2115,
+                    "endColumn": 132,
+                    "endOffset": 2243
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 15,
-                        "startColumn": 0,
-                        "startOffset": 1950,
-                        "endColumn": 210,
-                        "endOffset": 2160
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2339,
+                        "endColumn": 132,
+                        "endOffset": 2467
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 2221,
-                    "endColumn": 180,
-                    "endOffset": 2397
+                    "startOffset": 2248,
+                    "endColumn": 183,
+                    "endOffset": 2427
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 16,
-                        "startColumn": 0,
-                        "startOffset": 2161,
-                        "endColumn": 176,
-                        "endOffset": 2337
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2472,
+                        "endColumn": 183,
+                        "endOffset": 2651
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 2402,
-                    "endColumn": 95,
-                    "endOffset": 2493
+                    "startOffset": 2432,
+                    "endColumn": 156,
+                    "endOffset": 2584
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 17,
-                        "startColumn": 0,
-                        "startOffset": 2338,
-                        "endColumn": 91,
-                        "endOffset": 2429
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2656,
+                        "endColumn": 156,
+                        "endOffset": 2808
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 2498,
-                    "endColumn": 95,
-                    "endOffset": 2589
+                    "startOffset": 2589,
+                    "endColumn": 170,
+                    "endOffset": 2755
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 18,
-                        "startColumn": 0,
-                        "startOffset": 2430,
-                        "endColumn": 91,
-                        "endOffset": 2521
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2813,
+                        "endColumn": 170,
+                        "endOffset": 2979
                     }
                 }
             },
@@ -310,18 +310,284 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 2594,
-                    "endColumn": 110,
-                    "endOffset": 2700
+                    "startOffset": 2760,
+                    "endColumn": 131,
+                    "endOffset": 2887
                 },
                 "from": {
-                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/values-pa/values.xml",
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
                     "position": {
-                        "startLine": 19,
-                        "startColumn": 0,
-                        "startOffset": 2522,
-                        "endColumn": 106,
-                        "endOffset": 2628
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2984,
+                        "endColumn": 131,
+                        "endOffset": 3111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2892,
+                    "endColumn": 177,
+                    "endOffset": 3065
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3116,
+                        "endColumn": 177,
+                        "endOffset": 3289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 3070,
+                    "endColumn": 124,
+                    "endOffset": 3190
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3294,
+                        "endColumn": 124,
+                        "endOffset": 3414
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 3195,
+                    "endColumn": 254,
+                    "endOffset": 3445
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 330,
+                        "endColumn": 254,
+                        "endOffset": 580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 3450,
+                    "endColumn": 247,
+                    "endOffset": 3693
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 3419,
+                        "endColumn": 247,
+                        "endOffset": 3662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 3698,
+                    "endColumn": 122,
+                    "endOffset": 3816
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 3667,
+                        "endColumn": 122,
+                        "endOffset": 3785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 3821,
+                    "endColumn": 109,
+                    "endOffset": 3926
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3790,
+                        "endColumn": 109,
+                        "endOffset": 3895
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 3931,
+                    "endColumn": 199,
+                    "endOffset": 4126
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3900,
+                        "endColumn": 199,
+                        "endOffset": 4095
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 4131,
+                    "endColumn": 132,
+                    "endOffset": 4259
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 4100,
+                        "endColumn": 132,
+                        "endOffset": 4228
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 4264,
+                    "endColumn": 210,
+                    "endOffset": 4470
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 4233,
+                        "endColumn": 210,
+                        "endOffset": 4439
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 4475,
+                    "endColumn": 138,
+                    "endOffset": 4609
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 4444,
+                        "endColumn": 138,
+                        "endOffset": 4578
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 4614,
+                    "endColumn": 180,
+                    "endOffset": 4790
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4583,
+                        "endColumn": 180,
+                        "endOffset": 4759
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 4795,
+                    "endColumn": 95,
+                    "endOffset": 4886
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 4764,
+                        "endColumn": 95,
+                        "endOffset": 4855
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 4891,
+                    "endColumn": 95,
+                    "endOffset": 4982
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 4860,
+                        "endColumn": 95,
+                        "endOffset": 4951
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 4987,
+                    "endColumn": 110,
+                    "endOffset": 5093
+                },
+                "from": {
+                    "file": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 4956,
+                        "endColumn": 110,
+                        "endOffset": 5062
                     }
                 }
             }

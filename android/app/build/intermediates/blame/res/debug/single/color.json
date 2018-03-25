@@ -25,7 +25,11 @@
     },
     {
         "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/color/common_google_signin_btn_text_dark.xml"
+        "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
+        "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
@@ -37,11 +41,15 @@
     },
     {
         "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/res/color/common_google_signin_btn_text_light.xml"
+        "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
         "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",

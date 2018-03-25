@@ -5,7 +5,12 @@ import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
 import {View, Text, StyleSheet, AsyncStorage} from 'react-native';
 import { Container, Thumbnail, Col, Grid, Header, Button, Content, Label, Form, Item, Input } from 'native-base';
 
-export default class Login extends React.Component {
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+
+import {setToken} from '../actions/tokenActions';
+
+class Login extends React.Component {
   constructor(props){
     super(props)
   }
@@ -28,6 +33,8 @@ export default class Login extends React.Component {
           name: user.name
         }).then(payload => {
           AsyncStorage.setItem('token', payload.data.token);
+          this.props.setToken(payload.data.token);
+          this.props.navigation.navigate('MainController');
         }).catch(error => {
           console.log(error);
         });
@@ -59,3 +66,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
+
+const mapStateToProps = state => {
+  return {
+    token: state.tokenReducer
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({
+    setToken
+  }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

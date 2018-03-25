@@ -5,23 +5,25 @@ import {Provider} from 'react-redux';
 import Login from './src/components/Login';
 import MainController from './src/components/MainController'; 
 
+import { DrawerNavigator } from 'react-navigation';
+
 import store from './src/store/index';
 
 export default class App extends React.Component {
   render() {
     return (
       <Provider store = {store}>
-        <MainController/>
+        <Drawer/>
       </Provider>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const Drawer = DrawerNavigator({
+  Login: {
+    screen: Login
   },
-});
+  MainController: {
+    screen: MainController
+  }
+}, {initialRouteName: 'Login'})

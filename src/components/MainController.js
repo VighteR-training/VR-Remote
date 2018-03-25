@@ -108,7 +108,6 @@ class MainController extends Component {
   render() {
     return (
       <Container>
-        <Header/>
         <View style={{flex: 1, justifyContent:'center', alignItems: 'center'}}>
           < View style = {{backgroundColor: '#F0F0F0', width: 200, height: 200,
             borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center'}}>
@@ -143,6 +142,5 @@ const mapDispatchToProps = dispatch => {
     resetGyroscopeArray
   }, dispatch);
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainController)

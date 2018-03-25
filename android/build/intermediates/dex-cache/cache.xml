@@ -3,30 +3,120 @@
 
     <item
         is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_3eae2d7ab1ac24dfa49a8b3cc8a671a6f5ad03c4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-11.0.4_be65dbc34e48c5f7c21fc3b9041900b4145f85a6.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
         <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_253f3a579b58d8682b3360be459ed2d66be0aca0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-9.2.1_2657689713b524b33689ee043ec05934c2f5d241.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_a4f37e3e4013f5dd6479f5f590424b8542ad632f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_44eb83fee62cb0a1d30796c2cc7d6a94a1cafbc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.2.1_e39e35c4c19c249f334bee9bec79e6c9eae01576.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/VRRemote/react-native-google-signin/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cd3aee12c850d291fe1f4b6708d5fdc8566c3a54">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/VRRemote-react-native-google-signin-unspecified_a1d926dc8ce59a02d1205c431fa0a6cfa0541cf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_6c58b6b4eccc9f536d5113c1cdcb751a75a5bb83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_b495b89feda518b547bc4dc4f1760177f634f2d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_70aafb836050e6f76a8babc589881bd061421272.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_194bcb4e4933ee325e7da01208a0dae065da4536.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_39d560e1a01712419a2dd565eb966535e11095a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_f8f56a4a85823534997a260f98d0a52ec6c022ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_3eae2d7ab1ac24dfa49a8b3cc8a671a6f5ad03c4.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,30 +147,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_d62557633fe1ed66aebbc8a29be2ab530a8bab06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.4_792bea374b63790c6aa64adc189e9644b41ee55e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_a4f37e3e4013f5dd6479f5f590424b8542ad632f.jar" />
+        sha1="e1bec33f1ec5367e25676638b430b9d585f3dbec">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-9.2.1_e8e0b42a03e82554d0f1a714ab74c56049a52caf.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,78 +174,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_44eb83fee62cb0a1d30796c2cc7d6a94a1cafbc8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_9962278f4a59b3877a812fd75875a71d58c50fd6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_449eb269aa357b07aaf5d5788dd6684866ab694e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_d0c35afe195cf6ab0daa014d3d8e38bed0815e40.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-11.0.4_99b0229b80d36df045cc1078d2569135171ef76c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/VRRemote/react-native-google-signin/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cd3aee12c850d291fe1f4b6708d5fdc8566c3a54">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/VRRemote-react-native-google-signin-unspecified_a1d926dc8ce59a02d1205c431fa0a6cfa0541cf6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_b495b89feda518b547bc4dc4f1760177f634f2d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_d769fd79096cafc7409466ab440493ade33a569b.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -189,15 +189,6 @@
         revision="23.0.1"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
         <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_fc914b0598d10bb267ef3a44751f1bae7fc9ad6e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_ce0a477572ac9f77e95007c5dbc5ea71576ce9af.jar" />
     </item>
     <item
         is-multidex="false"
@@ -219,30 +210,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_70aafb836050e6f76a8babc589881bd061421272.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_b788a38683b16e83f1f64576a2a9ab06953b198e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_4491df533ae43b21c3e04ed9c1cceec886560f49.jar" />
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.2.1_5eb92f73165662c8843d16c7899a243f1b656108.jar" />
     </item>
     <item
         is-multidex="false"
@@ -264,30 +237,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.2.1_e0ae3748e5abbabb3f591dbc390e62df7592cfca.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jennndol/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
         <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_0d602669ef1428e0dbd83cc316c7c31d07f7fa30.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_be3d254d8c61e673118a19838ce44f9f2dc43fb0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jennndol/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_39d560e1a01712419a2dd565eb966535e11095a6.jar" />
     </item>
 
 </items>
