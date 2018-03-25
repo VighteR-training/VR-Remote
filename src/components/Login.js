@@ -1,11 +1,13 @@
 import React from 'react';
-import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
 import axios from 'axios';
-import {Button, View, Text, StyleSheet, AsyncStorage} from 'react-native';
+
+import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
+import {View, Text, StyleSheet, AsyncStorage} from 'react-native';
+import { Container, Thumbnail, Col, Grid, Header, Button, Content, Label, Form, Item, Input } from 'native-base';
 
 export default class Login extends React.Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
   }
 
   componentWillMount() {

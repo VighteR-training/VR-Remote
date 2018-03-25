@@ -246,6 +246,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/VRRemote/react-native-sensors/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6d9c92e8924aa3781fb38c70ff8b4d62b0343a5a">
+        <dex dex="/home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/pre-dexed/debug/VRRemote-react-native-sensors-unspecified_02b4924830f8707b397b97dd3cd290d254b29aa7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jennndol/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"

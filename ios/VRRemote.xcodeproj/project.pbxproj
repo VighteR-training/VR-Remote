@@ -41,6 +41,7 @@
 		666B769287AD4D0FB5022A80 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619670A525DC4747BC44278E /* SafariServices.framework */; };
 		40649EDD59224A4D93888E9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A36E9E29A314207ACE6E6EF /* SystemConfiguration.framework */; };
 		B740BA5D7FFE41469CF757E4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121161E41FA847BEA5023FAA /* AddressBook.framework */; };
+		D36C3C40808E489995109BAE /* libRNSensors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 118700305E6A40FE9B1574D1 /* libRNSensors.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +297,8 @@
 		619670A525DC4747BC44278E /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		5A36E9E29A314207ACE6E6EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		121161E41FA847BEA5023FAA /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		3C855BB413E1462995AC495B /* RNSensors.xcodeproj */ = {isa = PBXFileReference; name = "RNSensors.xcodeproj"; path = "../node_modules/react-native-sensors/ios/RNSensors.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		118700305E6A40FE9B1574D1 /* libRNSensors.a */ = {isa = PBXFileReference; name = "libRNSensors.a"; path = "libRNSensors.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +332,7 @@
 				666B769287AD4D0FB5022A80 /* SafariServices.framework in Frameworks */,
 				40649EDD59224A4D93888E9A /* SystemConfiguration.framework in Frameworks */,
 				B740BA5D7FFE41469CF757E4 /* AddressBook.framework in Frameworks */,
+				D36C3C40808E489995109BAE /* libRNSensors.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +515,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				844C14E2B00F4C58903672D4 /* RNGoogleSignin.xcodeproj */,
+				3C855BB413E1462995AC495B /* RNSensors.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1082,10 +1087,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+					"$(SRCROOT)/../node_modules/react-native-sensors/ios",
 				);
 			};
 			name = Debug;
@@ -1107,10 +1114,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+					"$(SRCROOT)/../node_modules/react-native-sensors/ios",
 				);
 			};
 			name = Release;
@@ -1133,6 +1142,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+					"$(SRCROOT)/../node_modules/react-native-sensors/ios",
 				);
 			};
 			name = Debug;
@@ -1154,6 +1164,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+					"$(SRCROOT)/../node_modules/react-native-sensors/ios",
 				);
 			};
 			name = Release;
@@ -1184,10 +1195,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+					"$(SRCROOT)/../node_modules/react-native-sensors/ios",
 				);
 			};
 			name = Debug;
@@ -1218,10 +1231,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+					"$(SRCROOT)/../node_modules/react-native-sensors/ios",
 				);
 			};
 			name = Release;
@@ -1247,6 +1262,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1271,6 +1287,7 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
