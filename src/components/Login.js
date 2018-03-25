@@ -27,7 +27,6 @@ class Login extends React.Component {
   _signIn() {
     GoogleSignin.signIn()
       .then((user) => {
-        console.log(user.email);
         axios.post('http://35.187.249.39:8000/auth', {
           email: user.email,
           name: user.name
@@ -41,19 +40,19 @@ class Login extends React.Component {
       })
       .catch((err) => {
         console.log('WRONG SIGNIN', err);
-      })
+      });
   }
 
   render() {
     return (
-      <View style={styles.container}>
+      <Container>
         <GoogleSigninButton 
         title='Login'
-        style={{width: 48, height: 48}} 
+        style={{width: 50, height: 50}} 
         size={GoogleSigninButton.Size.Icon} 
         color={GoogleSigninButton.Color.Dark}
         onPress={this._signIn.bind(this)}/>
-      </View>
+      </Container>
     );
   }
 }

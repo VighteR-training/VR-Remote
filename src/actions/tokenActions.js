@@ -12,7 +12,6 @@ const destroy_token = () => {
 }
 
 export const setToken = (payload) => {
-  console.log(payload);
   return (dispatch) => {
     dispatch(assign_token(payload));
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Thumbnail, Header, Left, Body, Right, Title, Text, ListItem } from 'native-base';
-import {View} from 'react-native';
+import {View, AsyncStorage} from 'react-native';
 import RNSensors from 'react-native-sensors';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -8,6 +8,7 @@ import {bindActionCreators} from 'redux';
 import db from '../config/firebase';
 import { assignGyroscope, assignGyroscopeArray, resetGyroscopeArray } from '../actions/gyroscopeActions';
 import Platform from '../helpers/dimensions';
+import {setToken} from '../actions/tokenActions';
 
 const { Gyroscope } = RNSensors;
 const gyroscopeObservable = new Gyroscope({
@@ -31,6 +32,12 @@ class MainController extends Component {
     }
   }
 
+  _getToken = (callback) => {
+    AsyncStorage.getItem('token', (err, val) => {
+      callback(val)
+    })
+  }
+
   componentWillMount() {
     gyroscopeObservable.subscribe(gyroscope => {
       this.setState({
@@ -45,7 +52,6 @@ class MainController extends Component {
       if (z > 1) {
           this.props.assignGyroscopeArray(gyroscope);
           this.props.assignGyroscope(gyroscope);
-
           const maxZ = Math.max.apply(Math,this.props.gyroscopeArray.map(item => item.z));
           const showing = this.props.gyroscopeArray.filter(item => {
             return item.z === maxZ 
@@ -71,8 +77,7 @@ class MainController extends Component {
   }
 
   saveHistoryIntoFirebase(obj) {
-
-    db.ref(this.state.email.split('@')[0]).child('logs').set(obj)
+    db.ref(this.state.email.split('@')[0]).set(obj)
     .then(() => {
       this.props.resetGyroscopeArray()
       this.changeStatus(obj)
@@ -119,6 +124,9 @@ class MainController extends Component {
         <ListItem>
           <Text>{this.state.magnitude}</Text>
         </ListItem>
+        <ListItem>
+          <Text>Token : {JSON.stringify(this.props.token)}</Text>
+        </ListItem>
       </Container>
     );
   }
@@ -131,7 +139,8 @@ const mapStateToProps = state => {
     },
     gyroscopeArray: [
       ...state.gyroscopeArrayReducer
-    ]
+    ],
+    token: state.tokenReducer
   }
 }
 
@@ -139,7 +148,8 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators({
     assignGyroscope,
     assignGyroscopeArray,
-    resetGyroscopeArray
+    resetGyroscopeArray,
+    setToken
   }, dispatch);
 }
 

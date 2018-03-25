@@ -21,7 +21,10 @@ export default class App extends React.Component {
 
 const Drawer = DrawerNavigator({
   Login: {
-    screen: Login
+    screen: Login,
+    navigationOptions: {
+      tabBarLabel : "Login"
+    }
   },
   MainController: {
     screen: MainController

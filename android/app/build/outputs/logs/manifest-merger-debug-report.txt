@@ -26,8 +26,8 @@ MERGED from [com.facebook.react:react-native:0.52.0] /home/jennndol/Desktop/Hack
 		ADDED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
 ADDED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/AndroidManifest.xml:9:5-11:41
-MERGED from [VRRemote:react-native-sensors:unspecified] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/VRRemote/react-native-sensors/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [VRRemote:react-native-google-signin:unspecified] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/VRRemote/react-native-google-signin/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [VRRemote:react-native-sensors:unspecified] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/VRRemote/react-native-sensors/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.52.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/AndroidManifest.xml:14:5-16:41
@@ -38,12 +38,19 @@ MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/jennndol/Desktop/Hac
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.1.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:2:3-70
-MERGED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.2.1/AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.0.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/11.0.4/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/AndroidManifest.xml:11:9-38
 		INJECTED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/AndroidManifest.xml
@@ -58,11 +65,16 @@ MERGED from [com.facebook.react:react-native:0.52.0] /home/jennndol/Desktop/Hack
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.1.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
 MERGED from [org.webkit:android-jsc:r174650] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
-MERGED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/AndroidManifest.xml:16:7-39
 	android:allowBackup
@@ -104,34 +116,34 @@ IMPLIED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/A
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/src/main/AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:21:9-24:46
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:23:19-52
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:24:19-43
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:22:19-78
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:21:19-68
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:28:9-31:110
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:30:13-36
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:31:13-107
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/AndroidManifest.xml:29:13-58
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/11.0.4/AndroidManifest.xml:24:18-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.2.1] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/jennndol/Desktop/Hacktiv8/VR/VR-Remote/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:20:20-65
