@@ -124,11 +124,13 @@ class MainController extends Component {
       <Container>
         <Content>
           <View style={{ justifyContent:'center', alignItems: 'center', marginTop: 10}}>
-            < View style = {{backgroundColor: '#F0F0F0', width: 100, height: 100,
-              borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center'}}>
+            < View style = {{backgroundColor: '#F0F0F0', width: 200, height: 200,
+              borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center',
+              flex: 1, 
+              }}>
               <Thumbnail large 
-              source={require('../assets/boxing.png')} 
-              style={{justifyContent:'center', alignSelf:'center'}} />
+              source={require('../assets/vighter.png')} 
+              style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200}} />
             </View>
           </View>
           <ListItem>

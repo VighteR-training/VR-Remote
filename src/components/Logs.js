@@ -20,26 +20,38 @@ export default class Logs extends Component {
   constructor(props){
     super(props)
     this.state = {
-      logs: []
+      logs: [],
+      loading: true,
+      token: null
     }
   }
 
   componentWillMount() {
     AsyncStorage.getItem('token', (err, val) => {
-      this.setState({
-        token: val
-      });
+      setTimeout(() => {
+        this.setState({token: val})
+      }, 2000);
     })
   }
 
   componentDidMount() {
-    axios.get('http://35.187.249.39:8000/log').then(payload => {
-      console.log(payload);
+axios
+  .get('http://35.187.249.39:8000/log', {
+  headers: {
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YWI3ZmMzOWYzODM1NzBlYTk3ZGNjMjk' +
+        'iLCJuYW1lIjoiTHV0aGZpIiwiZW1haWwiOiJqa3QubHV0aGZpQGdtYWlsLmNvbSIsImlhdCI6MTUyMjA' +
+        'zNjU4NH0.yq_5WXA0suLpJyvxZM4nWxwCfoy8TtaTnc1wp13D7gM'
+  }
+})
+  .then(payload => {
+      this.setState({
+        logs: payload.data.payload,
+        loading: false
+      })
     })
     .catch(error => {
       console.log(error);
     });
-    console.log(this.state.token)
   }
 
   static navigationOptions = {
@@ -52,31 +64,37 @@ export default class Logs extends Component {
   }
 
   render() {
+    if (this.state.loading) {
+      return (
+      <Container>
+        <Content>
+          <Text>Loading...</Text>
+        </Content>
+      </Container>
+      )
+    } else {
     return (
       <Container>
         <Content>
           <List>
-            <ListItem>
-              <Body>
-                <Text>Jab</Text>
-                <Text note>Practicing jab . .</Text>
-              </Body>
-              <Right>
-                <Text note>3:43 pm</Text>
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Body>
-                <Text>Uppercut</Text>
-                <Text note>Practicing uppercut . .</Text>
-              </Body>
-              <Right>
-                <Text note>3:53 pm</Text>
-              </Right>
-            </ListItem>
+            {
+              this.state.logs.map(item => (
+                <ListItem>
+                  <Body>
+                    <Text>{item.type}</Text>
+                    <Text note>Practicing {item.type} . .</Text>
+                  </Body>
+                  <Right>
+                    <Text note>{item.power}</Text>
+                    <Text note>{item.status}</Text>
+                  </Right>
+                </ListItem>
+              ))
+            }
           </List>
         </Content>
       </Container>
     );
+    }
   }
 }

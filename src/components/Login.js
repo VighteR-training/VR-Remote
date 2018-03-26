@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
-import {View, Text, ImageBackground, StyleSheet, AsyncStorage} from 'react-native';
+import {View, Text, ImageBackground, StyleSheet, AsyncStorage, TouchableOpacity} from 'react-native';
 import { Container, Thumbnail, Col, Grid, Header, Button, Content, Label, Form, Item, Input } from 'native-base';
 
 import {connect} from 'react-redux';
@@ -12,20 +12,11 @@ import Wallpaper from './Wallpaper';
 
 import {setToken} from '../actions/tokenActions';
 
-import bgSrc from '../assets/wallpaper.jpg';
+import bgSrc from '../assets/change.jpg';
 
 class Login extends React.Component {
   constructor(props){
     super(props)
-  }
-
-  static navigationOptions = {
-    title: 'Login',
-    headerTitleStyle : {
-      width: '100%',
-      textAlign: 'center',
-      backgroundColor: 'transparent'
-    }
   }
 
   componentWillMount() {
@@ -35,6 +26,7 @@ class Login extends React.Component {
     GoogleSignin.configure({
       webClientId: '1076077368750-b9shjuououruah5dluu4b82ttjlubml3.apps.googleusercontent.com'
     })
+    console.log(GoogleSigninButton, ' warna')
   }
 
   _signIn() {
@@ -58,20 +50,22 @@ class Login extends React.Component {
 
   render() {
     return (
-          <ImageBackground style={styles.picture} source={bgSrc}>
-          <Container>
-            <Content>
-              <View style={styles.centered}>
+      <ImageBackground style={styles.picture} source={bgSrc}>
+        <Container>
+          <Content>
+            <View style={styles.centered}>
+              <TouchableOpacity>
                 <GoogleSigninButton 
-                title='Login'
-                style={{width: 50, height: 50}} 
-                size={GoogleSigninButton.Size.Icon} 
-                color={GoogleSigninButton.Color.Dark}
-                onPress={this._signIn.bind(this)}/>
-              </View>
-            </Content>
-          </Container>
-          </ImageBackground>
+                  title='Login'
+                  style={styles.Gsign} 
+                  color={GoogleSigninButton.Color.Auto}
+                  onPress={this._signIn.bind(this)}
+                />
+              </TouchableOpacity>
+            </View>
+          </Content>
+        </Container>
+      </ImageBackground>
     );
   }
 }
@@ -79,13 +73,15 @@ class Login extends React.Component {
 const styles = StyleSheet.create({
   picture: {
     flex: 1,
-    width: null,
-    height: null,
-    resizeMode: 'cover'
   },
   centered: {
-    justifyContent: 'center',
-    alignSelf: 'center'
+    justifyContent: 'flex-end',
+    alignSelf: 'center',
+    marginTop: 370
+  },
+  Gsign: {
+    width: 250,
+    height: 40,
   }
 })
 

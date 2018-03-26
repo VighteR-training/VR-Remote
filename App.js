@@ -58,4 +58,17 @@ const Drawer = StackNavigator({
   Main: {
     screen: TabNav
   }
-}, {initialRouteName: 'Login'})
+}, {
+  initialRouteName: 'Login',
+  navigationOptions : {
+    headerStyle: {
+    backgroundColor : '#424242'
+    },
+    headerTintColor : '#fff',
+    headerTitleStyle : {
+      fontWeight: 'bold',
+      color: '#fff',
+    },
+  }
+},
+)
