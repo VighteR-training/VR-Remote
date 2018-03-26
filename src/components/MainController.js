@@ -22,13 +22,13 @@ class MainController extends Component {
       chosen: null,
       magnitude: null,
       email: 'vlootfie@gmail.com',
-      temp: [],
       orientation: {
         isPortrait: false,
         isLandscape: false,
         isPhone: false,
         isTablet: false
-      }
+      },
+      isTrue: false
     }
   }
 
@@ -68,7 +68,7 @@ class MainController extends Component {
 
           let magnitude = 0; 
           
-          if(showing.length > 0){   
+          if(showing.length > 0){
             magnitude = Math.sqrt((showing[0].z * showing[0].z) + (showing[0].y * showing[0].y) + (showing[0].x * showing[0].x)); 
           }
 
@@ -104,8 +104,17 @@ class MainController extends Component {
     db.ref(this.state.email.split('@')[0]).on('value', (snapshot) => {
       let data = snapshot.val()
       if(data.ready){
+        if(data.type === 'jab' || data.type === 'uppercut'){
+          (this.state.orientation.isPortrait && this.state.orientation.isTablet) ? 
+            this.setState({isTrue: true}) : this.setState({isTrue:false});
+        }
+
+        if (data.type === 'hook') {
+          (this.state.orientation.isLandscape && this.state.orientation.isTablet) ? 
+          this.setState({isTrue: true}) : this.setState({isTrue:false});
+        }
         setTimeout(()=>{
-          this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type})
+          this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type, isTrue: this.state.isTrue})
         }, 3000)
       }
     })

@@ -78,8 +78,8 @@ export default class Logs extends Component {
         <Content>
           <List>
             {
-              this.state.logs.map(item => (
-                <ListItem>
+              this.state.logs.map((item, index) => (
+                <ListItem key={index}>
                   <Body>
                     <Text>{item.type}</Text>
                     <Text note>Practicing {item.type} . .</Text>
