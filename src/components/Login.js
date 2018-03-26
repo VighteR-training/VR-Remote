@@ -2,17 +2,30 @@ import React from 'react';
 import axios from 'axios';
 
 import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
-import {View, Text, StyleSheet, AsyncStorage} from 'react-native';
+import {View, Text, ImageBackground, StyleSheet, AsyncStorage} from 'react-native';
 import { Container, Thumbnail, Col, Grid, Header, Button, Content, Label, Form, Item, Input } from 'native-base';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
+import Wallpaper from './Wallpaper';
+
 import {setToken} from '../actions/tokenActions';
+
+import bgSrc from '../assets/wallpaper.jpg';
 
 class Login extends React.Component {
   constructor(props){
     super(props)
+  }
+
+  static navigationOptions = {
+    title: 'Login',
+    headerTitleStyle : {
+      width: '100%',
+      textAlign: 'center',
+      backgroundColor: 'transparent'
+    }
   }
 
   componentWillMount() {
@@ -45,26 +58,36 @@ class Login extends React.Component {
 
   render() {
     return (
-      <Container>
-        <GoogleSigninButton 
-        title='Login'
-        style={{width: 50, height: 50}} 
-        size={GoogleSigninButton.Size.Icon} 
-        color={GoogleSigninButton.Color.Dark}
-        onPress={this._signIn.bind(this)}/>
-      </Container>
+          <ImageBackground style={styles.picture} source={bgSrc}>
+          <Container>
+            <Content>
+              <View style={styles.centered}>
+                <GoogleSigninButton 
+                title='Login'
+                style={{width: 50, height: 50}} 
+                size={GoogleSigninButton.Size.Icon} 
+                color={GoogleSigninButton.Color.Dark}
+                onPress={this._signIn.bind(this)}/>
+              </View>
+            </Content>
+          </Container>
+          </ImageBackground>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  picture: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
+    width: null,
+    height: null,
+    resizeMode: 'cover'
+  },
+  centered: {
+    justifyContent: 'center',
+    alignSelf: 'center'
   }
-});
+})
 
 const mapStateToProps = state => {
   return {

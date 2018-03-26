@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Thumbnail, Header, Left, Body, Right, Title, Text, ListItem } from 'native-base';
+import { Container, Content, Thumbnail, Header, Left, Body, Right, Title, Text, ListItem } from 'native-base';
 import {View, AsyncStorage} from 'react-native';
 import RNSensors from 'react-native-sensors';
 import {connect} from 'react-redux';
@@ -30,6 +30,15 @@ class MainController extends Component {
         isTablet: false
       }
     }
+  }
+
+  static navigationOptions = {
+    title: 'Remote',
+    headerTitleStyle : {
+      width: '100%',
+      textAlign: 'center'
+    },
+    headerLeft: null
   }
 
   _getToken = (callback) => {
@@ -113,20 +122,19 @@ class MainController extends Component {
   render() {
     return (
       <Container>
-        <View style={{flex: 1, justifyContent:'center', alignItems: 'center'}}>
-          < View style = {{backgroundColor: '#F0F0F0', width: 200, height: 200,
-            borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center'}}>
-            <Thumbnail large 
-            source={require('../assets/boxing.png')} 
-            style={{justifyContent:'center', alignSelf:'center'}} />
+        <Content>
+          <View style={{ justifyContent:'center', alignItems: 'center', marginTop: 10}}>
+            < View style = {{backgroundColor: '#F0F0F0', width: 100, height: 100,
+              borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center'}}>
+              <Thumbnail large 
+              source={require('../assets/boxing.png')} 
+              style={{justifyContent:'center', alignSelf:'center'}} />
+            </View>
           </View>
-        </View>
-        <ListItem>
-          <Text>{this.state.magnitude}</Text>
-        </ListItem>
-        <ListItem>
-          <Text>Token : {JSON.stringify(this.props.token)}</Text>
-        </ListItem>
+          <ListItem>
+            <Text>{this.state.magnitude}</Text>
+          </ListItem>
+        </Content>
       </Container>
     );
   }
