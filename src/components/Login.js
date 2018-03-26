@@ -32,7 +32,7 @@ class Login extends React.Component {
   _signIn() {
     GoogleSignin.signIn()
       .then((user) => {
-        axios.post('http://35.187.249.39:8000/auth', {
+        axios.post('https://alanglab-189602.appspot.com/auth', {
           email: user.email,
           name: user.name
         }).then(payload => {

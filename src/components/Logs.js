@@ -35,23 +35,23 @@ export default class Logs extends Component {
   }
 
   componentDidMount() {
-axios
-  .get('http://35.187.249.39:8000/log', {
-  headers: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YWI3ZmMzOWYzODM1NzBlYTk3ZGNjMjk' +
-        'iLCJuYW1lIjoiTHV0aGZpIiwiZW1haWwiOiJqa3QubHV0aGZpQGdtYWlsLmNvbSIsImlhdCI6MTUyMjA' +
-        'zNjU4NH0.yq_5WXA0suLpJyvxZM4nWxwCfoy8TtaTnc1wp13D7gM'
-  }
-})
-  .then(payload => {
-      this.setState({
-        logs: payload.data.payload,
-        loading: false
+    setTimeout(() => {
+      axios
+        .get('https://alanglab-189602.appspot.com/log', {
+        headers: {
+          token: this.state.token
+        }
       })
-    })
-    .catch(error => {
-      console.log(error);
-    });
+        .then(payload => {
+            this.setState({
+              logs: payload.data.payload,
+              loading: false
+            })
+          })
+          .catch(error => {
+            console.log(error);
+          });
+    }, 3000);
   }
 
   static navigationOptions = {

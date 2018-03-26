@@ -101,17 +101,16 @@ class MainController extends Component {
   }
 
   getSignal(callback){
-    
     db.ref(this.state.email.split('@')[0]).on('value', (snapshot) => {
       let data = snapshot.val()
       if(data.ready){
         setTimeout(()=>{
           this.setState(
             {
-              temp: [...this.state.temp, {power: this.state.magnitude, gyroscope: this.state.chosen, type: 'jab'}]
+              temp: [...this.state.temp, {power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type}]
             }
           )          
-          this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: 'jab'})
+          this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type})
           console.log(this.state.chosen, this.state.magnitude);
           console.log(this.state.temp, 'ini temp');
         }, 3000)
