@@ -35,7 +35,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store = {store}>
-        <Drawer/>
+        <Stack/>
       </Provider>)
     }
   }
@@ -51,7 +51,7 @@ const TabNav = TabNavigator({
   tabBarPosition: 'bottom'
 });
 
-const Drawer = StackNavigator({
+const Stack = StackNavigator({
   Login: {
     screen: Login
   },

@@ -76,7 +76,7 @@ class MainController extends Component {
             magnitude,
             chosen: showing[0]
           })
-          this.getSignal();             
+          this.getSignal();
       }
     });
   }
@@ -105,14 +105,7 @@ class MainController extends Component {
       let data = snapshot.val()
       if(data.ready){
         setTimeout(()=>{
-          this.setState(
-            {
-              temp: [...this.state.temp, {power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type}]
-            }
-          )          
           this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type})
-          console.log(this.state.chosen, this.state.magnitude);
-          console.log(this.state.temp, 'ini temp');
         }, 3000)
       }
     })
@@ -135,6 +128,12 @@ class MainController extends Component {
           <ListItem>
             <Text>{this.state.magnitude}</Text>
           </ListItem>
+          <Text>
+            isPortrait = { this.state.orientation.isPortrait ? 'true\n' : 'false\n'}
+            isLandscape = { this.state.orientation.isLandscape ? 'true\n' : 'false\n'}
+            isPhone = { this.state.orientation.isPhone ? 'true\n' : 'false\n'}
+            isTablet = {this.state.orientation.isTablet ? 'true\n' : 'false\n'}
+          </Text>
         </Content>
       </Container>
     );
