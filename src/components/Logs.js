@@ -27,16 +27,14 @@ export default class Logs extends Component {
       refreshing: false
     }
   }
-
-  componentWillMount() {
+  
+  componentDidMount() {
     AsyncStorage.getItem('token', (err, val) => {
       setTimeout(() => {
         this.setState({token: val})
       }, 2000);
     });
-  }
-
-  componentDidMount() {
+    
     setTimeout(() => {
       this._getLogs(payload => {
         this.setState({
