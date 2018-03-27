@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {View, RefreshControl} from 'react-native';
 import {
   Container,
   Header,
@@ -23,35 +24,39 @@ export default class Logs extends Component {
       logs: [],
       loading: true,
       token: null,
+      refreshing: false
     }
   }
-
-  componentWillMount() {
+  
+  componentDidMount() {
     AsyncStorage.getItem('token', (err, val) => {
       setTimeout(() => {
         this.setState({token: val})
       }, 2000);
     });
+    
+    setTimeout(() => {
+      this._getLogs(payload => {
+        this.setState({
+          logs: payload.data.payload,
+          loading: false
+        })
+      })
+    }, 3000);
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      axios
-        .get('https://alanglab-189602.appspot.com/log', {
+  _getLogs(callback){
+    axios.get('https://alanglab-189602.appspot.com/log', {
         headers: {
           token: this.state.token
         }
       })
-        .then(payload => {
-            this.setState({
-              logs: payload.data.payload,
-              loading: false
-            })
-          })
-          .catch(error => {
-            console.log(error);
-          });
-    }, 3000);
+      .then(payload => {
+        callback(payload)
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }
 
   static navigationOptions = {
@@ -63,19 +68,26 @@ export default class Logs extends Component {
     }
   }
 
+  _onRefresh() {
+    this.setState({refreshing: true});
+    this._getLogs(payload => {
+      this.setState({refreshing: false, logs: payload.data.payload});
+    })
+  }
+
   render() {
     if (this.state.loading) {
       return (
-      <Container>
-        <Content>
-          <ActivityIndicator size="large" color="#000" style={{marginTop: 200}} />
-        </Content>
-      </Container>
+        <View style={{flex: 1,justifyContent: 'center', alignItems: 'center'}}>
+          <ActivityIndicator size="large" color="#000"/>
+        </View>
       )
     } else {
     return (
       <Container>
-        <Content>
+        <Content refreshControl={
+          <RefreshControl refreshing={this.state.refreshing} onRefresh={this._onRefresh.bind(this)}/>
+        }>
           <List>
             {
               this.state.logs.map((item, index) => (

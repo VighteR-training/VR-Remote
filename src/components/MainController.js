@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Content, Thumbnail, Card, CardItem, Header, Left, Body, Right, Title, Text, ListItem, List } from 'native-base';
-import {View, AsyncStorage} from 'react-native';
+import {View, AsyncStorage, BackHandler} from 'react-native';
 import RNSensors from 'react-native-sensors';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
 
 import db from '../config/firebase';
 import { assignGyroscope, assignGyroscopeArray, resetGyroscopeArray } from '../actions/gyroscopeActions';
@@ -21,7 +22,6 @@ class MainController extends Component {
     this.state = {
       chosen: null,
       magnitude: 0,
-      email: 'vlootfie@gmail.com',
       orientation: {
         isPortrait: false,
         isLandscape: false,
@@ -30,6 +30,16 @@ class MainController extends Component {
       },
       isTrue: true
     }
+
+    BackHandler.addEventListener('hahaha', function () {
+      GoogleSignin.signOut()
+      .then(() => {
+        console.log('out');
+      })
+      .catch((err) => {
+        console.log(err)
+      });
+    });
   }
 
   static navigationOptions = {
@@ -48,6 +58,13 @@ class MainController extends Component {
   }
 
   componentWillMount() {
+    GoogleSignin.hasPlayServices({
+      autoResolve: true
+    })
+    GoogleSignin.configure({
+      webClientId: '1076077368750-b9shjuououruah5dluu4b82ttjlubml3.apps.googleusercontent.com'
+    })
+
     gyroscopeObservable.subscribe(gyroscope => {
       this.setState({
         orientation: {
@@ -76,7 +93,7 @@ class MainController extends Component {
             magnitude,
             chosen: showing[0]
           })
-          this.getSignal(); //TODO: check this
+          this.getSignal();
       }
     });
   }
@@ -86,7 +103,9 @@ class MainController extends Component {
   }
 
   saveHistoryIntoFirebase(obj) {
-    db.ref(this.state.email.split('@')[0]).set({...obj, ready: false})
+    db.ref(this.props.navigation.state.params.email.split('@')[0] ?
+    (this.props.navigation.state.params.email.split('@')[0]).split('.')[0]
+     : this.props.navigation.state.params.email.split('@')[0]).set({...obj, ready: false})
     .then(() => {
       this.props.resetGyroscopeArray();
     })
@@ -96,7 +115,9 @@ class MainController extends Component {
   }
 
   getSignal(callback){
-    db.ref(this.state.email.split('@')[0]).on('value', (snapshot) => {
+    db.ref(this.props.navigation.state.params.email.split('@')[0] ?
+    (this.props.navigation.state.params.email.split('@')[0]).split('.')[0]
+     : this.props.navigation.state.params.email.split('@')[0]).on('value', (snapshot) => {
       let data = snapshot.val()
       if(data.ready){
         this.setState({magnitude: 0})
@@ -121,18 +142,19 @@ class MainController extends Component {
     return (
           <View style={{ flex:1, justifyContent:'center', alignItems: 'center', padding: 10}}>
             < View style = {{backgroundColor: '#cccccc90', flexDirection: 'column', width: 250, height: 250, padding: 10,
-              borderRadius: 150, borderColor:'black', borderWidth:0.5, justifyContent:'center',
+              borderRadius: 150, borderColor:'black', borderWidth:1, justifyContent:'center',
               flex: 1, 
               }}>
               <View style={{ height: 50, justifyContent:'center', alignItems: 'center'}}>
-                <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20, fontStyle: 'italic'}}>{Math.round(this.state.magnitude).toFixed(2)} deg/s</Text>
+                <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 15, fontStyle: 'italic'}}>{Math.round(this.state.magnitude).toFixed(2)} deg/s</Text>
+                <Text>Rotation Speed</Text>
               </View>
               <View style={{ height: 200, justifyContent: 'center'}}>
                 <Thumbnail large 
                 source={require('../assets/vighter.png')} 
                 style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200, padding: 20}} />
               </View>
-              <View style={{height: 50, justifyContent: 'center'}}>
+              <View style={{height: 50, justifyContent: 'center' , alignItems: 'center'}}>
               {
                 this.state.isTrue ?
                   this.state.magnitude < 4 ? (
@@ -161,6 +183,7 @@ class MainController extends Component {
                   </View>
                 )
               }
+                <Text>Punch Status</Text>              
               </View>
             </View>
           </View>
@@ -190,5 +213,3 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainController)
-
-// TODO: Bug state
