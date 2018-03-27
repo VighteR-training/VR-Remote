@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Content, Thumbnail, Card, CardItem, Header, Left, Body, Right, Title, Text, ListItem, List } from 'native-base';
-import {View, AsyncStorage} from 'react-native';
+import {View, AsyncStorage, BackHandler} from 'react-native';
 import RNSensors from 'react-native-sensors';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
 
 import db from '../config/firebase';
 import { assignGyroscope, assignGyroscopeArray, resetGyroscopeArray } from '../actions/gyroscopeActions';
@@ -21,7 +22,6 @@ class MainController extends Component {
     this.state = {
       chosen: null,
       magnitude: 0,
-      email: 'vlootfie@gmail.com',
       orientation: {
         isPortrait: false,
         isLandscape: false,
@@ -30,6 +30,16 @@ class MainController extends Component {
       },
       isTrue: true
     }
+
+    BackHandler.addEventListener('hahaha', function () {
+      GoogleSignin.signOut()
+      .then(() => {
+        console.log('out');
+      })
+      .catch((err) => {
+        console.log(err)
+      });
+    });
   }
 
   static navigationOptions = {
@@ -48,6 +58,13 @@ class MainController extends Component {
   }
 
   componentWillMount() {
+    GoogleSignin.hasPlayServices({
+      autoResolve: true
+    })
+    GoogleSignin.configure({
+      webClientId: '1076077368750-b9shjuououruah5dluu4b82ttjlubml3.apps.googleusercontent.com'
+    })
+
     gyroscopeObservable.subscribe(gyroscope => {
       this.setState({
         orientation: {
@@ -76,7 +93,7 @@ class MainController extends Component {
             magnitude,
             chosen: showing[0]
           })
-          this.getSignal(); //TODO: check this
+          this.getSignal();
       }
     });
   }
@@ -86,7 +103,9 @@ class MainController extends Component {
   }
 
   saveHistoryIntoFirebase(obj) {
-    db.ref(this.state.email.split('@')[0]).set({...obj, ready: false})
+    db.ref(this.props.navigation.state.params.email.split('@')[0] ?
+    (this.props.navigation.state.params.email.split('@')[0]).split('.')[0]
+     : this.props.navigation.state.params.email.split('@')[0]).set({...obj, ready: false})
     .then(() => {
       this.props.resetGyroscopeArray();
     })
@@ -96,7 +115,9 @@ class MainController extends Component {
   }
 
   getSignal(callback){
-    db.ref(this.state.email.split('@')[0]).on('value', (snapshot) => {
+    db.ref(this.props.navigation.state.params.email.split('@')[0] ?
+    (this.props.navigation.state.params.email.split('@')[0]).split('.')[0]
+     : this.props.navigation.state.params.email.split('@')[0]).on('value', (snapshot) => {
       let data = snapshot.val()
       if(data.ready){
         this.setState({magnitude: 0})

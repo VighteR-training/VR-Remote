@@ -49,7 +49,7 @@ class Login extends React.Component {
           this.setState({
             loading: false
           })
-          this.props.navigation.navigate('MainController');
+          this.props.navigation.navigate('MainController', {name: user.name, email: user.email});
         }).catch(error => {
           console.log(error);
         });
