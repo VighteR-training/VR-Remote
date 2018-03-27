@@ -28,7 +28,7 @@ class MainController extends Component {
         isPhone: false,
         isTablet: false
       },
-      isTrue: false
+      isTrue: true
     }
   }
 
@@ -119,39 +119,51 @@ class MainController extends Component {
 
   render() {
     return (
-      <Container>
-        <Content>
-          <View style={{ justifyContent:'center', alignItems: 'center', marginTop: 10}}>
-            < View style = {{backgroundColor: '#F0F0F0', width: 200, height: 200,
-              borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center',
+          <View style={{ flex:1, justifyContent:'center', alignItems: 'center', padding: 10}}>
+            < View style = {{backgroundColor: '#cccccc90', flexDirection: 'column', width: 250, height: 250, padding: 10,
+              borderRadius: 150, borderColor:'black', borderWidth:0.5, justifyContent:'center',
               flex: 1, 
               }}>
-              <Thumbnail large 
-              source={require('../assets/vighter.png')} 
-              style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200}} />
+              <View style={{ height: 50, justifyContent:'center', alignItems: 'center'}}>
+                <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20, fontStyle: 'italic'}}>{Math.round(this.state.magnitude).toFixed(2)} deg/s</Text>
+              </View>
+              <View style={{ height: 200, justifyContent: 'center'}}>
+                <Thumbnail large 
+                source={require('../assets/vighter.png')} 
+                style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200, padding: 20}} />
+              </View>
+              <View style={{height: 50, justifyContent: 'center'}}>
+              {
+                this.state.isTrue ?
+                  this.state.magnitude < 4 ? (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Too Weak</Text>
+                    </View>
+                  )
+                  : this.state.magnitude < 7 ? (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Need More Power</Text>
+                    </View>
+                  )
+                  : this.state.magnitude < 11 ? (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Good</Text>
+                    </View>
+                  )
+                  : (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Need More Power</Text>
+                    </View>
+                  )
+                : (
+                  <View>
+                    <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>You Did the Wrong Move</Text>
+                  </View>
+                )
+              }
+              </View>
             </View>
           </View>
-          <Card>
-            <CardItem>
-              <Body>
-              <List>
-                <ListItem>
-                  <Text>Rotation Power : {this.state.magnitude}</Text>
-                </ListItem>
-                <ListItem>
-                  <Text>
-                    isPortrait = { this.state.orientation.isPortrait ? 'true\n' : 'false\n'}
-                    isLandscape = { this.state.orientation.isLandscape ? 'true\n' : 'false\n'}
-                    isPhone = { this.state.orientation.isPhone ? 'true\n' : 'false\n'}
-                    isTablet = {this.state.orientation.isTablet ? 'true\n' : 'false\n'}
-                  </Text>
-                </ListItem>
-              </List>
-              </Body>
-            </CardItem>
-          </Card>
-        </Content>
-      </Container>
     );
   }
 }
