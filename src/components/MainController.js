@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Thumbnail, Header, Left, Body, Right, Title, Text, ListItem } from 'native-base';
+import { Container, Content, Thumbnail, Card, CardItem, Header, Left, Body, Right, Title, Text, ListItem, List } from 'native-base';
 import {View, AsyncStorage} from 'react-native';
 import RNSensors from 'react-native-sensors';
 import {connect} from 'react-redux';
@@ -12,7 +12,7 @@ import {setToken} from '../actions/tokenActions';
 
 const { Gyroscope } = RNSensors;
 const gyroscopeObservable = new Gyroscope({
-  updateInterval: 300
+  updateInterval: 100
 });
 
 class MainController extends Component {
@@ -20,7 +20,7 @@ class MainController extends Component {
     super(props);
     this.state = {
       chosen: null,
-      magnitude: null,
+      magnitude: 0,
       email: 'vlootfie@gmail.com',
       orientation: {
         isPortrait: false,
@@ -76,7 +76,7 @@ class MainController extends Component {
             magnitude,
             chosen: showing[0]
           })
-          this.getSignal();
+          this.getSignal(); //TODO: check this
       }
     });
   }
@@ -86,24 +86,20 @@ class MainController extends Component {
   }
 
   saveHistoryIntoFirebase(obj) {
-    db.ref(this.state.email.split('@')[0]).set(obj)
+    db.ref(this.state.email.split('@')[0]).set({...obj, ready: false})
     .then(() => {
-      this.props.resetGyroscopeArray()
-      this.changeStatus(obj)
+      this.props.resetGyroscopeArray();
     })
     .catch(err => {
-      console.log(err)
-    })
-  }
-
-  changeStatus(obj) {
-    db.ref(this.state.email.split('@')[0]).set({...obj, ready: false});
+      console.log(err);
+    });
   }
 
   getSignal(callback){
     db.ref(this.state.email.split('@')[0]).on('value', (snapshot) => {
       let data = snapshot.val()
       if(data.ready){
+        this.setState({magnitude: 0})
         if(data.type === 'jab' || data.type === 'uppercut'){
           (this.state.orientation.isPortrait && this.state.orientation.isTablet) ? 
             this.setState({isTrue: true}) : this.setState({isTrue:false});
@@ -115,7 +111,8 @@ class MainController extends Component {
         }
         setTimeout(()=>{
           this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type, isTrue: this.state.isTrue})
-        }, 3000)
+          console.log(this.props.gyroscopeArray);
+        }, 2000)
       }
     })
   }
@@ -134,15 +131,25 @@ class MainController extends Component {
               style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200}} />
             </View>
           </View>
-          <ListItem>
-            <Text>{this.state.magnitude}</Text>
-          </ListItem>
-          <Text>
-            isPortrait = { this.state.orientation.isPortrait ? 'true\n' : 'false\n'}
-            isLandscape = { this.state.orientation.isLandscape ? 'true\n' : 'false\n'}
-            isPhone = { this.state.orientation.isPhone ? 'true\n' : 'false\n'}
-            isTablet = {this.state.orientation.isTablet ? 'true\n' : 'false\n'}
-          </Text>
+          <Card>
+            <CardItem>
+              <Body>
+              <List>
+                <ListItem>
+                  <Text>Rotation Power : {this.state.magnitude}</Text>
+                </ListItem>
+                <ListItem>
+                  <Text>
+                    isPortrait = { this.state.orientation.isPortrait ? 'true\n' : 'false\n'}
+                    isLandscape = { this.state.orientation.isLandscape ? 'true\n' : 'false\n'}
+                    isPhone = { this.state.orientation.isPhone ? 'true\n' : 'false\n'}
+                    isTablet = {this.state.orientation.isTablet ? 'true\n' : 'false\n'}
+                  </Text>
+                </ListItem>
+              </List>
+              </Body>
+            </CardItem>
+          </Card>
         </Content>
       </Container>
     );
@@ -171,3 +178,5 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainController)
+
+// TODO: Bug state

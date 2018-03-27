@@ -12,7 +12,7 @@ import {
   Text
 } from 'native-base';
 
-import {AsyncStorage} from 'react-native';
+import {AsyncStorage, ActivityIndicator} from 'react-native';
 
 import axios from 'axios';
 
@@ -22,7 +22,7 @@ export default class Logs extends Component {
     this.state = {
       logs: [],
       loading: true,
-      token: null
+      token: null,
     }
   }
 
@@ -31,7 +31,7 @@ export default class Logs extends Component {
       setTimeout(() => {
         this.setState({token: val})
       }, 2000);
-    })
+    });
   }
 
   componentDidMount() {
@@ -68,7 +68,7 @@ export default class Logs extends Component {
       return (
       <Container>
         <Content>
-          <Text>Loading...</Text>
+          <ActivityIndicator size="large" color="#000" style={{marginTop: 200}} />
         </Content>
       </Container>
       )
