@@ -8,11 +8,9 @@ import { Container, Thumbnail, Col, Grid, Header, Button, Content, Label, Form, 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import Wallpaper from './Wallpaper';
-
 import {setToken} from '../actions/tokenActions';
 
-import bgSrc from '../assets/change.jpg';
+import bgSrc from '../assets/wallpaper.png';
 
 class Login extends React.Component {
   constructor(props){
@@ -24,8 +22,7 @@ class Login extends React.Component {
 
   static navigationOptions = {
     title: 'Login',
-    headerMode: 'none',
-    headerLeft: null
+    header: null
   }
 
   componentWillMount() {
@@ -65,9 +62,7 @@ class Login extends React.Component {
   render() {
     return (
       <ImageBackground style={styles.picture} source={bgSrc}>
-        <Container>
-          <Content>
-            <View style={styles.centered}>
+           <View style={styles.centered}>
               {
                 this.state.loading ? (
                   <View>
@@ -86,24 +81,23 @@ class Login extends React.Component {
                 )
               }
             </View>
-          </Content>
-        </Container>
-      </ImageBackground>
+          </ImageBackground>
     );
   }
 }
 
 const styles = StyleSheet.create({
   picture: {
-    flex: 1
+    flex: 1,
+    justifyContent: 'center',
+    alignContent: 'center'
   },
   centered: {
-    marginTop: 220,
-    alignItems: 'center'
+    alignItems: 'center',
   },
   Gsign: {
-    width: 150,
-    height: 60
+    width: 120,
+    height: 50
   }
 })
 
