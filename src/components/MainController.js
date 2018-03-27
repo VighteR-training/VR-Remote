@@ -142,7 +142,7 @@ class MainController extends Component {
     return (
           <View style={{ flex:1, justifyContent:'center', alignItems: 'center', padding: 10}}>
             < View style = {{backgroundColor: '#cccccc90', flexDirection: 'column', width: 250, height: 250, padding: 10,
-              borderRadius: 150, borderColor:'black', borderWidth:0.5, justifyContent:'center',
+              borderRadius: 150, borderColor:'black', borderWidth:1, justifyContent:'center',
               flex: 1, 
               }}>
               <View style={{ height: 50, justifyContent:'center', alignItems: 'center'}}>
