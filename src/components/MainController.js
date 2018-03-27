@@ -125,14 +125,15 @@ class MainController extends Component {
               flex: 1, 
               }}>
               <View style={{ height: 50, justifyContent:'center', alignItems: 'center'}}>
-                <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20, fontStyle: 'italic'}}>{Math.round(this.state.magnitude).toFixed(2)} deg/s</Text>
+                <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 15, fontStyle: 'italic'}}>{Math.round(this.state.magnitude).toFixed(2)} deg/s</Text>
+                <Text>Rotation Speed</Text>
               </View>
               <View style={{ height: 200, justifyContent: 'center'}}>
                 <Thumbnail large 
                 source={require('../assets/vighter.png')} 
                 style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200, padding: 20}} />
               </View>
-              <View style={{height: 50, justifyContent: 'center'}}>
+              <View style={{height: 50, justifyContent: 'center' , alignItems: 'center'}}>
               {
                 this.state.isTrue ?
                   this.state.magnitude < 4 ? (
@@ -161,6 +162,7 @@ class MainController extends Component {
                   </View>
                 )
               }
+                <Text>Punch Status</Text>              
               </View>
             </View>
           </View>
@@ -190,5 +192,3 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainController)
-
-// TODO: Bug state
