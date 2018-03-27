@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
-import {View, Text, ImageBackground, StyleSheet, AsyncStorage, TouchableOpacity} from 'react-native';
+import {ActivityIndicator, View, Text, ImageBackground, StyleSheet, AsyncStorage, TouchableOpacity} from 'react-native';
 import { Container, Thumbnail, Col, Grid, Header, Button, Content, Label, Form, Item, Input } from 'native-base';
 
 import {connect} from 'react-redux';
@@ -17,6 +17,15 @@ import bgSrc from '../assets/change.jpg';
 class Login extends React.Component {
   constructor(props){
     super(props)
+    this.state = {
+      loading: false
+    }
+  }
+
+  static navigationOptions = {
+    title: 'Login',
+    headerMode: 'none',
+    headerLeft: null
   }
 
   componentWillMount() {
@@ -26,10 +35,12 @@ class Login extends React.Component {
     GoogleSignin.configure({
       webClientId: '1076077368750-b9shjuououruah5dluu4b82ttjlubml3.apps.googleusercontent.com'
     })
-    console.log(GoogleSigninButton, ' warna')
   }
 
   _signIn() {
+    this.setState({
+      loading: true
+    })
     GoogleSignin.signIn()
       .then((user) => {
         axios.post('https://alanglab-189602.appspot.com/auth', {
@@ -38,6 +49,9 @@ class Login extends React.Component {
         }).then(payload => {
           AsyncStorage.setItem('token', payload.data.token);
           this.props.setToken(payload.data.token);
+          this.setState({
+            loading: false
+          })
           this.props.navigation.navigate('MainController');
         }).catch(error => {
           console.log(error);
@@ -54,14 +68,23 @@ class Login extends React.Component {
         <Container>
           <Content>
             <View style={styles.centered}>
-              <TouchableOpacity>
-                <GoogleSigninButton 
-                  title='Login'
-                  style={styles.Gsign} 
-                  color={GoogleSigninButton.Color.Auto}
-                  onPress={this._signIn.bind(this)}
-                />
-              </TouchableOpacity>
+              {
+                this.state.loading ? (
+                  <View>
+                    <ActivityIndicator size="large" color="#fff" />
+                    <Text style={{color: '#fff'}}>Loading...</Text>
+                  </View>
+                ) : (
+                <TouchableOpacity>
+                  <GoogleSigninButton 
+                    title='Login'
+                    style={styles.Gsign} 
+                    color={GoogleSigninButton.Color.Auto}
+                    onPress={this._signIn.bind(this)}
+                  />
+                </TouchableOpacity>
+                )
+              }
             </View>
           </Content>
         </Container>
@@ -72,16 +95,15 @@ class Login extends React.Component {
 
 const styles = StyleSheet.create({
   picture: {
-    flex: 1,
+    flex: 1
   },
   centered: {
-    justifyContent: 'flex-end',
-    alignSelf: 'center',
-    marginTop: 370
+    marginTop: 220,
+    alignItems: 'center'
   },
   Gsign: {
-    width: 250,
-    height: 40,
+    width: 150,
+    height: 60
   }
 })
 

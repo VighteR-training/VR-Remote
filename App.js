@@ -62,13 +62,13 @@ const Stack = StackNavigator({
   initialRouteName: 'Login',
   navigationOptions : {
     headerStyle: {
-    backgroundColor : '#424242'
+      backgroundColor : '#424242'
     },
     headerTintColor : '#fff',
     headerTitleStyle : {
       fontWeight: 'bold',
       color: '#fff',
-    },
+    }
   }
 },
 )
