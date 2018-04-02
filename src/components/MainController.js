@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Thumbnail, Header, Left, Body, Right, Title, Text, ListItem } from 'native-base';
+import { Container, Content, Thumbnail, Card, CardItem, Header, Left, Body, Right, Title, Text, ListItem, List } from 'native-base';
 import {View, AsyncStorage} from 'react-native';
 import RNSensors from 'react-native-sensors';
 import {connect} from 'react-redux';
@@ -12,7 +12,7 @@ import {setToken} from '../actions/tokenActions';
 
 const { Gyroscope } = RNSensors;
 const gyroscopeObservable = new Gyroscope({
-  updateInterval: 300
+  updateInterval: 100
 });
 
 class MainController extends Component {
@@ -20,15 +20,15 @@ class MainController extends Component {
     super(props);
     this.state = {
       chosen: null,
-      magnitude: null,
+      magnitude: 0,
       email: 'vlootfie@gmail.com',
-      temp: [],
       orientation: {
         isPortrait: false,
         isLandscape: false,
         isPhone: false,
         isTablet: false
-      }
+      },
+      isTrue: true
     }
   }
 
@@ -68,7 +68,7 @@ class MainController extends Component {
 
           let magnitude = 0; 
           
-          if(showing.length > 0){   
+          if(showing.length > 0){
             magnitude = Math.sqrt((showing[0].z * showing[0].z) + (showing[0].y * showing[0].y) + (showing[0].x * showing[0].x)); 
           }
 
@@ -76,7 +76,7 @@ class MainController extends Component {
             magnitude,
             chosen: showing[0]
           })
-          this.getSignal();
+          this.getSignal(); //TODO: check this
       }
     });
   }
@@ -86,56 +86,84 @@ class MainController extends Component {
   }
 
   saveHistoryIntoFirebase(obj) {
-    db.ref(this.state.email.split('@')[0]).set(obj)
+    db.ref(this.state.email.split('@')[0]).set({...obj, ready: false})
     .then(() => {
-      this.props.resetGyroscopeArray()
-      this.changeStatus(obj)
+      this.props.resetGyroscopeArray();
     })
     .catch(err => {
-      console.log(err)
-    })
-  }
-
-  changeStatus(obj) {
-    db.ref(this.state.email.split('@')[0]).set({...obj, ready: false});
+      console.log(err);
+    });
   }
 
   getSignal(callback){
     db.ref(this.state.email.split('@')[0]).on('value', (snapshot) => {
       let data = snapshot.val()
       if(data.ready){
+        this.setState({magnitude: 0})
+        if(data.type === 'jab' || data.type === 'uppercut'){
+          (this.state.orientation.isPortrait && this.state.orientation.isTablet) ? 
+            this.setState({isTrue: true}) : this.setState({isTrue:false});
+        }
+
+        if (data.type === 'hook') {
+          (this.state.orientation.isLandscape && this.state.orientation.isTablet) ? 
+          this.setState({isTrue: true}) : this.setState({isTrue:false});
+        }
         setTimeout(()=>{
-          this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type})
-        }, 3000)
+          this.saveHistoryIntoFirebase({power: this.state.magnitude, gyroscope: this.state.chosen, type: data.type, isTrue: this.state.isTrue})
+          console.log(this.props.gyroscopeArray);
+        }, 2000)
       }
     })
   }
 
   render() {
     return (
-      <Container>
-        <Content>
-          <View style={{ justifyContent:'center', alignItems: 'center', marginTop: 10}}>
-            < View style = {{backgroundColor: '#F0F0F0', width: 200, height: 200,
-              borderRadius: 200, borderColor:'black', borderWidth:3, justifyContent:'center',
+          <View style={{ flex:1, justifyContent:'center', alignItems: 'center', padding: 10}}>
+            < View style = {{backgroundColor: '#cccccc90', flexDirection: 'column', width: 250, height: 250, padding: 10,
+              borderRadius: 150, borderColor:'black', borderWidth:0.5, justifyContent:'center',
               flex: 1, 
               }}>
-              <Thumbnail large 
-              source={require('../assets/vighter.png')} 
-              style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200}} />
+              <View style={{ height: 50, justifyContent:'center', alignItems: 'center'}}>
+                <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20, fontStyle: 'italic'}}>{Math.round(this.state.magnitude).toFixed(2)} deg/s</Text>
+              </View>
+              <View style={{ height: 200, justifyContent: 'center'}}>
+                <Thumbnail large 
+                source={require('../assets/vighter.png')} 
+                style={{justifyContent:'center', alignSelf:'center', width: 200, height: 200, padding: 20}} />
+              </View>
+              <View style={{height: 50, justifyContent: 'center'}}>
+              {
+                this.state.isTrue ?
+                  this.state.magnitude < 4 ? (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Too Weak</Text>
+                    </View>
+                  )
+                  : this.state.magnitude < 7 ? (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Need More Power</Text>
+                    </View>
+                  )
+                  : this.state.magnitude < 11 ? (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Good</Text>
+                    </View>
+                  )
+                  : (
+                    <View>
+                      <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>Need More Power</Text>
+                    </View>
+                  )
+                : (
+                  <View>
+                    <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>You Did the Wrong Move</Text>
+                  </View>
+                )
+              }
+              </View>
             </View>
           </View>
-          <ListItem>
-            <Text>{this.state.magnitude}</Text>
-          </ListItem>
-          <Text>
-            isPortrait = { this.state.orientation.isPortrait ? 'true\n' : 'false\n'}
-            isLandscape = { this.state.orientation.isLandscape ? 'true\n' : 'false\n'}
-            isPhone = { this.state.orientation.isPhone ? 'true\n' : 'false\n'}
-            isTablet = {this.state.orientation.isTablet ? 'true\n' : 'false\n'}
-          </Text>
-        </Content>
-      </Container>
     );
   }
 }
@@ -162,3 +190,5 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainController)
+
+// TODO: Bug state
